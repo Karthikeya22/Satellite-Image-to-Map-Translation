@@ -133,21 +133,24 @@ The model was trained using **U-Net 256 as the Generator** and **a CNN-based Dis
 #### **Qualitative Analysis (Generated Image Samples)**
 | **Epoch** | **Generated Image** |
 |----------|----------------------|
-| **Epoch 1** | ![Placeholder Image](output_samples/sample_epoch_1.png) |
-| **Epoch 50** | ![Placeholder Image](output_samples/sample_epoch_50.png) |
-| **Epoch 100** | ![Placeholder Image](output_samples/sample_epoch_100.png) |
+| **Epoch 10** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_000010.png) |
+| **Epoch 100** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_000100.png) |
+| **Epoch 500** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_000500.png) |
+| **Epoch 1000** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_001000.png) |
+| **Epoch 1500** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_001500.png) |
+| **Epoch 2000** | ![Placeholder Image](https://github.com/Karthikeya22/Satellite-Image-to-Map-Translation/blob/main/Images/sample_images/plot_002000.png) |
 
-- **Early Training (Epoch 1-10)**  
+- **Early Training (Epoch 1-100)**  
   - The output images were mostly noise with little resemblance to real maps.
   - The Generator had not yet learned meaningful mappings from satellite images to maps.
   - The Discriminator was easily able to distinguish between real and fake images.
 
-- **Mid Training (Epoch 50-75)**  
+- **Mid Training (Epoch 500-1000)**  
   - The generated maps started to form recognizable structures.
   - Some roads and boundaries became visible, though fine details were still lacking.
   - The Discriminator's accuracy fluctuated, indicating that the Generator was improving.
 
-- **Late Training (Epoch 100+)**  
+- **Late Training (Epoch 1500+)**  
   - The Generator produced **much sharper and more structured maps**.
   - Roads, buildings, and land features became clearly distinguishable.
   - The Discriminator struggled to differentiate real from generated maps, showing that the Generator had learned well.
