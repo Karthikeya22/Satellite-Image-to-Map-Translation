@@ -1,6 +1,6 @@
 # **GAN-Based Image Generation using T4 GPU on Google Colab**
 
-## **1. Project Overview**
+# **1. Project Overview**
 This project implements a **Generative Adversarial Network (GAN)** to generate realistic images. The model was developed and trained using **Google Colab with a T4 GPU**, leveraging **TensorFlow** and **Keras** for deep learning.
 
 The GAN consists of two primary neural networks:
@@ -11,7 +11,7 @@ These networks are trained adversarially to improve the quality of generated ima
 
 ---
 
-## **2. Repository Structure**
+# **2. Repository Structure**
 The repository is structured as follows:
 
 ```bash
@@ -27,7 +27,7 @@ The repository is structured as follows:
 
 ---
 
-## **3. Dataset** 
+# **3. Dataset** 
 - **Dataset Link: https://efrosgans.eecs.berkeley.edu/pix2pix/datasets/maps.tar.gz** 
 
 The dataset used in this project consists of **satellite images of cities**, obtained via **web scraping from Google Maps**. It is publicly available and provided by **UC Berkeley’s Electrical and Computer Science Department**.
@@ -42,7 +42,7 @@ The dataset used in this project consists of **satellite images of cities**, obt
 
 ---
 
-## **4. Environment & Dependencies**
+# **4. Environment & Dependencies**
 ### **Hardware Used**
 - **Google Colab with NVIDIA T4 GPU**
 - RAM: 16GB
@@ -58,7 +58,7 @@ The dataset used in this project consists of **satellite images of cities**, obt
 
 ---
 
-## **5.  Model Architecture**
+# **5.  Model Architecture**
 
 ## **5.1 Generator: U-Net Architecture for Image-to-Image Translation**
 
@@ -126,7 +126,7 @@ The **Discriminator is a deep CNN** that progressively **extracts hierarchical f
 ---
 
 
-## **6. Results and Conclusion**
+# **6. Results and Conclusion**
 
 ### **6.1. Results**
 The model was trained using **U-Net 256 as the Generator** and **a CNN-based Discriminator** on the **satellite-to-map translation dataset**. Below are the key observations from the training and evaluation process:
