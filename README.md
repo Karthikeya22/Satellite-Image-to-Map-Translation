@@ -17,7 +17,6 @@ The repository is structured as follows:
 ```bash
 .
 ├── README.md
-├── Dataset
 ├── Images
 │   ├── sample_images
 │   └── output_images
